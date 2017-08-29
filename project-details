@@ -1,0 +1,41 @@
+new Ip 35.166.76.104
+Col_Zillow_NewKey.ppk?
+
+http://35.166.186.139/
+
+latest ip 
+35.166.186.139
+
+
+https://nodemailer.com/using-attachments/
+
+
+Server: 
+smtp.sendgrid.net
+Use 
+port 25 or 587 for unencrypted / TLS connectionsUse 
+port 465 for SSL connections
+Username: svc_smtp
+password: (37VW*pm1i$B%6X@
+
+
+Email from will be - no-reply-propertyrange@colonystarwood.com
+
+
+https://app.sendgrid.com/guide/integrate/langs/nodejs#settings/api_keys
+
+
+
+
+ var smtpConfig = {
+        host: 'smtp.sendgrid.net',
+        port: 465,
+        secure: true, // use SSL
+        auth: {
+            user: 'jack1',
+            pass: 'jack2016'
+        }
+    };
+
+
+    var transporter = mailer.createTransport(smtpConfig);
