@@ -25,6 +25,15 @@ router.get('/', function(req, res, next) {
     });
 });
 
+
+router.get('/userDetails', function(req, res, next) {
+    res.render('userDetails', {
+        title: 'Express',
+        message: ""
+    });
+});
+
+
 router.post("/upload", function(req, res, next) {
    var  user_contacts_ids = [];
     var client = new pg.Client(conString);
@@ -35,7 +44,7 @@ router.post("/upload", function(req, res, next) {
 
         
 
-        console.log(user_contacts_ids, '*************');
+    console.log(user_contacts_ids, '*************');
     var dt = datetime.create();
     var create_date = dt.format('dmYH:M:S');
 

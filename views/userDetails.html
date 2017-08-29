@@ -1,0 +1,119 @@
+<p id="notice"><%= notice %></p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+        <h1>User Details</h1>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Number</th>
+              <th>Gender</th>
+              <th>Nameset</th>
+              <th>Title</th>
+              <th>Givenname</th>
+              <th>Middleinitial</th>
+              <th>Surname</th>
+              <th>Streetaddress</th>
+              <th>City</th>
+              <th>State</th>
+              <th>Statefull</th>
+              <th>Zipcode</th>
+              <th>Country</th>
+              <th>Countryfull</th>
+              <th>Emailaddress</th>
+              <th>Username</th>
+              <th>Password</th>
+              <th>Browseruseragent</th>
+              <th>Telephonenumber</th>
+              <th>Telephonecountrycode</th>
+              <th>Mothersmaiden</th>
+              <th>Birthday</th>
+              <th>Age</th>
+              <th>Cctype</th>
+              <th>Ccnumber</th>
+              <th>Cvv2</th>
+              <th>Ccexpires</th>
+              <th>Nationalid</th>
+              <th>Ups</th>
+              <th>Westernunionmtcn</th>
+              <th>Moneygrammtcn</th>
+              <th>Color</th>
+              <th>Occupation</th>
+              <th>Company</th>
+              <th>Vehicle</th>
+              <th>Domain</th>
+              <th>Guid</th>
+              <th>Latitude</th>
+              <th>Longitude</th>
+              <th colspan="3"></th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <% @user_details.each do |user_detail| %>
+              <tr>
+                <td><%= user_detail.number %></td>
+                <td><%= user_detail.gender %></td>
+                <td><%= user_detail.name_set
+         %></td>
+                <td><%= user_detail.title %></td>
+                <td><%= user_detail.given_name %></td>
+                <td><%= user_detail.middle_initial
+         %></td>
+                <td><%= user_detail.surname %></td>
+                <td><%= user_detail.street_address
+         %></td>
+                <td><%= user_detail.city %></td>
+                <td><%= user_detail.state %></td>
+                <td><%= user_detail.state_full
+         %></td>
+                <td><%= user_detail.zip_code %></td>
+                <td><%= user_detail.country %></td>
+                <td><%= user_detail.country_full
+         %></td>
+                <td><%= user_detail.email_address
+         %></td>
+                <td><%= user_detail.username %></td>
+                <td><%= user_detail.password %></td>
+                <td><%= user_detail.browser_user_agent %></td>
+                <td><%= user_detail.telephone_number
+         %></td>
+                <td><%= user_detail.telephone_country_code %></td>
+                <td><%= user_detail.mothers_maiden
+         %></td>
+                <td><%= user_detail.birthday %></td>
+                <td><%= user_detail.age %></td>
+                <td><%= user_detail.cc_type
+         %></td>
+                <td><%= user_detail.cc_number %></td>
+                <td><%= user_detail.cvv2 %></td>
+                <td><%= user_detail.cc_expires
+         %></td>
+                <td><%= user_detail.national_id %></td>
+                <td><%= user_detail.ups %></td>
+                <td><%= user_detail.western_union_mtcn %></td>
+                <td><%= user_detail.money_gram_mtcn
+         %></td>
+                <td><%= user_detail.color %></td>
+                <td><%= user_detail.occupation %></td>
+                <td><%= user_detail.company %></td>
+                <td><%= user_detail.vehicle %></td>
+                <td><%= user_detail.domain %></td>
+                <td><%= user_detail.guid %></td>
+                <td><%= user_detail.latitude %></td>
+                <td><%= user_detail.longitude %></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+
+        <br>
+        </div>
+    </div>
+  </div>
+
+<%= link_to 'New User Detail', new_user_detail_path %>
