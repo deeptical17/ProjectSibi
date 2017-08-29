@@ -13,7 +13,7 @@ var mailer = require('nodemailer');
 var datetime = require('node-datetime');
 var pg = require("pg");
 
-var conString = "pg://postgres:root@localhost:5432/mydb";
+var conString = "pg://mlimhzmsvitqnj:17aabd9ccceb76a22bc12a67c824393d9a8ae53c8030aa445012258de96909ee@ec2-107-20-250-195.compute-1.amazonaws.com:5432/deknahqr1rsgju";
 
 
 
